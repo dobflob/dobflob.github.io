@@ -18,6 +18,22 @@ section {
     background-color: whitesmoke;
 }
 
+section:first-of-type {
+    margin-top: 60px;
+}
+
+#page-heading {
+    color:#d3c336;
+    background-color:#050207;
+    padding: 10px 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
 /*typography*/
 
 h1 {
@@ -74,12 +90,20 @@ p span {
     border: 2px #2ba594 solid;
 }
 
+.teal-fg {
+    color:#2ba594;
+}
+
 .teal-bkgd {
     background-color: #2ba594;
 }
 
 .darkteal {
     border: 2px #2b726b solid;
+}
+
+.darkteal-fg {
+    color:#2b726b;
 }
 
 .darkteal-bkgd {
@@ -151,6 +175,7 @@ button, fieldset, input, legend, select, textarea {
     border: 2px#2b726b solid;
 }
 
+
 textarea {
     width: 90%;
     display: block;
@@ -163,7 +188,7 @@ input, select {
     margin: 5px 5px 10px 0;
 }
 
-input[type="color"]{
+input[type=color]{
     padding: 0 1px;
 }
 
@@ -175,28 +200,45 @@ input:focus {
     border-color:#2ba594;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-    height: 20px;
-    width: 20px;
-    border: 1px #050207 solid;
+input[type=checkbox], input[type=radio] {
+    display: none;
+}
+
+input[type=radio] + label,
+input[type=checkbox] + label {
+    display: inline-block;
+    height: 26px;
+    width: 26px;
     vertical-align: middle;
+    background-repeat: no-repeat;
+} 
+
+input[type=checkbox] + label {
+    background-size: 90%;
+    background-image: url("../designsystem/assets/square.svg");
+    filter: invert(36%) sepia(58%) saturate(423%) hue-rotate(125deg) brightness(91%) contrast(88%);
 }
 
-input[type="radio"] {
+input[type=radio] + label {
+    background-size: 90%;
+    background-image: url("../designsystem/assets/circle.svg");
+    filter: invert(36%) sepia(58%) saturate(423%) hue-rotate(125deg) brightness(91%) contrast(88%);
+}
+
+/* input[type=radio] {
     border-radius: 50%;
-}
+} */
 
-input[type="checkbox"]:checked {
+input[type=checkbox]:checked + label {
     color:#2ba594;
-    background-color:azure;
-    border: 1px #2ba594 solid;
+    background-image: url("../designsystem/assets/checkbox.svg");
+    filter: invert(53%) sepia(63%) saturate(446%) hue-rotate(122deg) brightness(90%) contrast(89%);
   }
 
-input[type="radio"]:checked {
+input[type=radio]:checked + label {
     color:#2ba594;
-    background-color:azure;
-    border: 1px #2ba594 solid;
+    background-image: url("../designsystem/assets/dot-circle.svg");
+    filter: invert(53%) sepia(63%) saturate(446%) hue-rotate(122deg) brightness(90%) contrast(89%);
   }
 
 
@@ -205,25 +247,25 @@ input:focus, select:focus, textarea:focus {
     border: 2px #2dab94 solid;
   }
 
-input[type="range"], input[type="file"] {
+input[type=range], input[type=file] {
     outline: none;
     border: none;
     padding: 0;
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
+input[type=range]::-webkit-slider-runnable-track {
     background: #2b726b;
     height: 0.5rem;
     border-radius: 5px;
   }
 
-input[type="range"]::-moz-range-track {
+input[type=range]::-moz-range-track {
     background: #2b726b;
     height: 0.5rem;
     border-radius: 5px;
   }
 
-input[type="range"]::-webkit-slider-thumb {
+input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
     border: 2px #2b726b solid;
@@ -235,7 +277,7 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
   }
 
-input[type="range"]::-moz-range-thumb {
+input[type=range]::-moz-range-thumb {
     -moz-appearance: none; /* Override default look */
     appearance: none;
     border: 2px #2b726b solid;
@@ -247,7 +289,7 @@ input[type="range"]::-moz-range-thumb {
     cursor: pointer;
   }
 
-  input[type="range"]::-webkit-slider-thumb:hover {
+  input[type=range]::-webkit-slider-thumb:hover {
     border: 2px #2dab94 solid;
     border-radius: 4px;
     background-color: #d3c236;
@@ -256,13 +298,13 @@ input[type="range"]::-moz-range-thumb {
     margin-top: -6px;
   }
 
-input[type="range"]::-moz-range-thumb:hover {
+input[type=range]::-moz-range-thumb:hover {
     border: 2px #2dab94 solid;
     border-radius: 4px;
     background-color: #d3c236;
   }
 
-input[type="file"]::file-selector-button {
+input[type=file]::file-selector-button {
     background-color:#2b726b;
     color: whitesmoke;
     padding: 10px;
@@ -270,11 +312,11 @@ input[type="file"]::file-selector-button {
     outline: none;
 }
 
-input[type="file"]::file-selector-button:hover {
+input[type=file]::file-selector-button:hover {
     background-color:#2dab94;
 }
 
-input[type="file"]::file-selector-button:active {
+input[type=file]::file-selector-button:active {
     background-color:#2dab94;
     border: 2px whitesmoke solid;
 }
