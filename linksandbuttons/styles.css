@@ -1,0 +1,81 @@
+/*my added styles*/
+p a {
+    padding: 2px 4px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  p a:visited {
+    color: #282e45;
+  }
+  
+  p a:hover {
+    font-weight: normal;
+    border: none;
+    font-weight: bold;
+    padding: 0 2px;
+    text-decoration: none;
+  }
+  
+  p a:active {
+    color: #75737f;
+  }
+  
+  a.nav-link {
+    color: #2176FF;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #efdab8;
+    margin: 2px 0;
+  }
+  
+  a.nav-link:visited {
+    color: #282e45;
+  }
+  
+  a.nav-link:hover {
+    color: #fff;
+    background-color: #2176FF;
+  }
+  
+  a.nav-link:active {
+    background-color: #75737f;
+  }
+  
+  a.activity {
+    cursor: pointer;
+  }
+  
+  a.activity:hover {
+    outline: 2px #282e45 dashed;
+    outline-offset: 4px;
+    font-weight: bold;
+  }
+  
+  a.activity:active {
+    background-color: #75737f;
+  }
+  
+  .btn {
+    background-color: #efdab8;
+    padding: 10px 20px;
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 7px 7px ;
+    cursor: pointer;
+  }
+  
+  .btn:visited {
+    color: #0060e4;
+  }
+  
+  .btn:hover {
+    color: #282e45;
+  }
+  
+  .btn:active {
+    opacity: 0.9;
+  }
