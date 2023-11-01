@@ -1,0 +1,160 @@
+/*COLORS*/
+.white {
+    color: white;
+}
+
+.background-primary {
+    background-color:#008080;
+}
+
+.color-primary {
+    color:#008080;
+}
+
+.background-light {
+    background-color: rgba(0,128,128,.1);
+}
+
+.color-light {
+    color: rgba(0,128,128,.2);
+}
+
+.background-dark {
+    background-color: #264348;
+}
+
+.color-dark {
+    color: #264348;
+}
+
+p {
+    color: #262626;
+}
+
+
+/*TYPOGRAPHY*/
+
+h1, h2, h3, h4, h5, h6 {
+    color: #264348;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/*Header Bar*/
+
+.header-logo {
+    max-width: 250px;
+}
+
+/*Navigation*/
+
+#nav-toggle-button{
+    background-color:rgba(0,128,128,.2);
+    font-size: 2rem;
+}
+
+#nav-toggle-button:hover{
+    background-color:#008080;
+    color: white;
+}
+
+button#nav-toggle-button.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none!important;
+}
+
+.navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-bottom: 2px solid #008080;
+}
+
+a.nav-link, a.nav-link:visited {
+    color: #264348;
+    font-weight: bold;
+}
+
+a.nav-link:hover, .nav-link.active {
+    color: #008080!important;
+}
+
+/*Main Content Sections*/
+
+#mainContent {
+    margin: 0;
+    padding: 0;
+}
+
+#mission, #values, #experience, #services, #contactForm {
+    padding: 5rem 3rem;
+}
+
+#mission .row, #values .row, #experience .row, #services .row, #footer .row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.img-container {
+    padding: 1.5rem 0;
+}
+
+#customers img, #candidates img, #ourTeam img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#customers p, #candidates p, #ourTeam p {
+    padding: 0 1rem;
+}
+
+/*Contact Us*/
+
+#contactForm {
+    max-width: 900px;
+    color: white;
+}
+
+.contactButton {
+    margin: 1rem 0;
+}
+
+.contactButton a {
+    background-color:#DFEDEE;
+    border: 3px solid #DFEDEE;
+    color:#008080;
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 500;
+    line-height: 3rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+    border-radius: .5rem;
+}
+
+.contactButton a:hover {
+    background-color:#008080;
+    border:3px solid #DFEDEE;
+    color:#DFEDEE;
+}
+
+/*Footer*/
+#footer {
+    padding: 3rem 4rem;
+}
+
+#footer a, #footer p {
+    color: white;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #cecece;
+}
+
+
+
