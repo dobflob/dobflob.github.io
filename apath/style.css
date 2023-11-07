@@ -7,30 +7,13 @@
     background-color:#008080;
 }
 
-.color-primary {
-    color:#008080;
-}
-
 .background-light {
     background-color: rgba(0,128,128,.1);
-}
-
-.color-light {
-    color: rgba(0,128,128,.2);
 }
 
 .background-dark {
     background-color: #264348;
 }
-
-.color-dark {
-    color: #264348;
-}
-
-p {
-    color: #262626;
-}
-
 
 /*TYPOGRAPHY*/
 
@@ -38,8 +21,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #264348;
 }
 
-.bold {
-    font-weight: bold;
+p {
+    color: #262626;
 }
 
 /*Header Bar*/
@@ -66,8 +49,6 @@ button#nav-toggle-button.navbar-toggler:focus {
 }
 
 .navbar {
-    padding-left: 2rem;
-    padding-right: 2rem;
     border-bottom: 2px solid #008080;
 }
 
@@ -86,18 +67,9 @@ a.nav-link:hover, .nav-link.active {
     margin: 0;
     padding: 0;
 }
-
-#mission, #values, #experience, #services, #contactForm {
-    padding: 5rem 3rem;
-}
-
 #mission .row, #values .row, #experience .row, #services .row, #footer .row {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.img-container {
-    padding: 1.5rem 0;
 }
 
 #customers img, #candidates img, #ourTeam img {
@@ -108,10 +80,6 @@ a.nav-link:hover, .nav-link.active {
     display: block;
 }
 
-#customers p, #candidates p, #ourTeam p {
-    padding: 0 1rem;
-}
-
 /*Contact Us*/
 
 #contactForm {
@@ -119,18 +87,12 @@ a.nav-link:hover, .nav-link.active {
     color: white;
 }
 
-.contactButton {
-    margin: 1rem 0;
-}
-
 .contactButton a {
     background-color:#DFEDEE;
     border: 3px solid #DFEDEE;
     color:#008080;
     text-decoration: none;
-    padding: 1rem;
     font-weight: 500;
-    line-height: 3rem;
     text-transform: uppercase;
     margin: 0 auto;
     border-radius: .5rem;
@@ -143,9 +105,6 @@ a.nav-link:hover, .nav-link.active {
 }
 
 /*Footer*/
-#footer {
-    padding: 3rem 4rem;
-}
 
 #footer a, #footer p {
     color: white;
@@ -155,6 +114,3 @@ a.nav-link:hover, .nav-link.active {
 #footer a:hover {
     color: #cecece;
 }
-
-
-
