@@ -72,12 +72,42 @@ a.nav-link:hover, .nav-link.active {
     margin: 0 auto;
 }
 
-#customers img, #candidates img, #ourTeam img {
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
+.imgcontainer img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
     object-fit: cover;
     display: block;
+}
+
+@media (min-width: 768px) {
+    .imgcontainer img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .imgcontainer img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .imgcontainer img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+    }
 }
 
 /*Contact Us*/
